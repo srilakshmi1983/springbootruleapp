@@ -1,0 +1,26 @@
+package com.mundio.drools 
+
+import com.mundio.Cheese
+import com.mundio.Person
+
+rule "Rule1"
+when
+    cheese : Cheese( type='stilton', price=10 )  
+    ArrayList(  ) from collect( Person( age=2 )  ) 
+    StockTick(  ) from accumulate(     
+    StockTick( company='RHT', vPrice : price )  ,
+        init( null ),
+        action( null ),
+        result( null )  ) 
+then
+Action vAction = new Action()
+cheese.action=vAction
+vAction.mail="dmail@gmail.com"
+vAction.mobile="909764567"
+vAction.sendSMS="Y"
+vAction.sendSMSdetail="sms body content"
+vAction.sendMail="Y"
+vAction.sendMaildetail="mail body content"
+end
+
+
