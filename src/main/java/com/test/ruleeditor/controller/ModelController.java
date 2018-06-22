@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by sinchan on 22/06/17.
+ * Created by Srilakshmi on 22/06/17.
  */
 
 @RestController

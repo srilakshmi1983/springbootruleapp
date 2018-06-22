@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by sinchon 26/08/17.
+ * Created by srilakshmi 26/08/17.
  */
 @RestController(value = "/rule")
 public class RuleCreationController {
